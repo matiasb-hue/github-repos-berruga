@@ -1,25 +1,35 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taller de Desarrollo Web</title>
-</head>
-<body>
+<!doctype html>
+<html dir="ltr" lang="es" >
+  <head>
+    <meta charset="utf-8">
+    <title>Nueva pestaña</title>
+    <style>
+      body {
+        background: #FFFFFF;
+        margin: 0;
+      }
 
-    <h1>Sitio Web Personal</h1>
+      #backgroundImage {
+        border: none;
+        height: 100%;
+        pointer-events: none;
+        position: fixed;
+        top: 0;
+        visibility: hidden;
+        width: 100%;
+      }
 
-    <p>Bienvenido a mi primera página desplegada en la nube. Este proyecto demuestra el uso de etiquetas fundamentales en HTML.</p>
-
-    <h2>Mis Pasatiempos</h2>
-    <ul>
-        <li>Programar y aprender tecnología</li>
-        <li>Escuchar música</li>
-        <li>Ver series y películas</li>
-    </ul>
-
-    <h2>Foto del Día</h2>
-    <img src="https://picsum.photos/500/300" alt="Paisaje aleatorio">
-
-</body>
+      [show-background-image] #backgroundImage {
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <iframe id="backgroundImage" src=""></iframe>
+    <ntp-app></ntp-app>
+    <script type="module" src="new_tab_page.js"></script>
+    <link rel="stylesheet" href="chrome://resources/css/text_defaults_md.css">
+    <link rel="stylesheet" href="chrome://theme/colors.css?sets=ui,chrome">
+    <link rel="stylesheet" href="shared_vars.css">
+  </body>
 </html>
