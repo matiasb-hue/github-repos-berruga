@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>ARTICLE - Wireframe System</title>
+</head>
+<body>
+
+   
+    <fieldset>
+        <legend><strong> CABECERA </strong></legend>
+        <table width="100%" border="0">
+            <tr>
+                <td><h1>ARTICLE - Create, Publish, Share</h1></td>
+                <td align="right">bienvenido usuario</td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <br>
+
+
+    <table width="100%" border="1" cellpadding="10" cellspacing="0">
+        <tr>
+            <!-- COLUMNA IZQUIERDA: MENÚ -->
+            <td width="20%" valign="top">
+                <fieldset>
+                    <legend><strong> MENÚ LATERAL </strong></legend>
+                    <nav>
+                        <ul>
+                            <li><a href="#signup">Sign Up</a></li>
+                            <li><a href="#grid-posts">Posts / Tarjetas</a></li>
+                            <li><a href="#add-post">Add New Post</a></li>
+                            <li><a href="#settings">Settings</a></li>
+                            <li><a href="#analytics">Analytics</a></li>
+                            <li><a href="#tools">Tools</a></li>
+                        </ul>
+                    </nav>
+                </fieldset>
+            </td>
+
+    
+            <td width="80%" valign="top">
+
+      
+                <fieldset id="signup">
+                    <legend><strong> 1. PANTALLA DE REGISTRO (Sign Up) </strong></legend>
+                    <table width="100%" border="1" cellpadding="10">
+                        <tr>
+                            <td width="50%" align="center" valign="middle">
+                                <h3>A low code content management system</h3>
+                                <p>[ Ilustración / Gráfico ]</p>
+                            </td>
+                            <td width="50%">
+                                <fieldset>
+                                    <legend>Sign Up</legend>
+                                    <form>
+                                        <p>
+                                            <label for="email">Email:</label><br>
+                                            <input type="email" id="email" name="email" placeholder="usuario@email.com">
+                                        </p>
+                                        <p>
+                                            <label for="password">Password:</label><br>
+                                            <input type="password" id="password" name="password" placeholder="••••••••">
+                                        </p>
+                                        <button type="submit">Registrarse</button>
+                                    </form>
+                                </fieldset>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+
+                <br><br>
+
+        
+                <fieldset id="grid-posts">
+                    <legend><strong> 2. GALERÍA DE POSTS (Grid View) </strong></legend>
+                    <table border="1" width="100%" cellpadding="10" cellspacing="5">
+                        <tr>
+                            <td width="33%" align="center">
+                                <fieldset>
+                                    <p>🖼️ [ Vista previa ]</p>
+                                    <button>Customize</button>
+                                </fieldset>
+                            </td>
+                            <td width="33%" align="center">
+                                <fieldset>
+                                    <p>🖼️ [ Vista previa ]</p>
+                                    <button>Customize</button>
+                                </fieldset>
+                            </td>
+                            <td width="33%" align="center">
+                                <fieldset>
+                                    <p>🖼️ [ Vista previa ]</p>
+                                    <button>Customize</button>
+                                </fieldset>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center">
+                                <fieldset>
+                                    <p>🖼️ [ Vista previa ]</p>
+                                    <button>Customize</button>
+                                </fieldset>
+                            </td>
+                            <td align="center">
+                                <fieldset>
+                                    <p>🖼️ [ Vista previa ]</p>
+                                    <button>Customize</button>
+                                </fieldset>
+                            </td>
+                            <td align="center">
+                                <fieldset>
+                                    <p>🖼️ [ Vista previa ]</p>
+                                    <button>Customize</button>
+                                </fieldset>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+
+                <br><br>
+
+         
+                <fieldset id="add-post">
+                    <legend><strong> 3. CREAR NUEVO POST (Add New Post) </strong></legend>
+                    <form>
+                        <p>
+                            <label for="title"><strong>Add New Post:</strong></label><br>
+                            <input type="text" id="title" size="50" placeholder="Escribe el título aquí...">
+                        </p>
+                        <p>
+                            <label for="banner"><strong>Banner:</strong></label><br>
+                            <input type="file" id="banner">
+                        </p>
+                        <p>
+                            <label for="content"><strong>Contenido:</strong></label><br>
+                            <textarea id="content" rows="6" cols="60" placeholder="Escribe tu artículo..."></textarea>
+                        </p>
+                        <button type="submit">Publish</button>
+                    </form>
+                </fieldset>
+
+                <br><br>
+
+             
+                <fieldset id="settings">
+                    <legend><strong> 4. CONFIGURACIÓN (Settings) </strong></legend>
+                    <fieldset>
+                        <legend>Account Privacy</legend>
+                        <p>
+                            <strong>Private Account:</strong><br>
+                            Haz tu cuenta privada para limitar accesos.<br>
+                            <label><input type="checkbox"> Activar</label>
+                        </p>
+                        <p>
+                            <strong>Interaction:</strong><br>
+                            Permite comentarios en tus publicaciones.<br>
+                            <label><input type="checkbox" checked> Permitir</label>
+                        </p>
+                    </fieldset>
+                </fieldset>
+
+                <br><br>
+
+         
+                <fieldset id="analytics">
+                    <legend><strong> 5. ANALÍTICAS (Analytics) </strong></legend>
+                    <fieldset align="center">
+                        <legend>Gráfica de rendimiento</legend>
+                        <br>
+                        <code>📈 [ GRÁFICO DE LÍNEA: 2020 - 2021 - 2022 ]</code>
+                        <br><br>
+                    </fieldset>
+                    <br>
+                    <table border="1" width="100%" cellpadding="8">
+                        <tr align="center">
+                            <td><strong>Visits:</strong><br>15,000</td>
+                            <td><strong>Actions:</strong><br>500</td>
+                            <td><strong>Followers:</strong><br>50,890</td>
+                            <td><strong>User reach:</strong><br>8,000</td>
+                        </tr>
+                    </table>
+                </fieldset>
+
+                <br><br>
+
+                <fieldset id="tools">
+                    <legend><strong> 6. HERRAMIENTAS (Tools pages) </strong></legend>
+                    <table border="1" width="100%" cellpadding="8">
+                        <tr>
+                            <td width="33%" align="center">
+                                <fieldset>
+                                    <legend>Tool 1</legend>
+                                    <p>🖼️ [ Muestra ]</p>
+                                    <p><small>Lorem ipsum dolor sit amet.</small></p>
+                                </fieldset>
+                            </td>
+                            <td width="33%" align="center">
+                                <fieldset>
+                                    <legend>Tool 2</legend>
+                                    <p>🖼️ [ Muestra ]</p>
+                                    <p><small>Lorem ipsum dolor sit amet.</small></p>
+                                </fieldset>
+                            </td>
+                            <td width="33%" align="center">
+                                <fieldset>
+                                    <legend>Tool 3</legend>
+                                    <p>🖼️ [ Muestra ]</p>
+                                    <p><small>Lorem ipsum dolor sit amet.</small></p>
+                                </fieldset>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
